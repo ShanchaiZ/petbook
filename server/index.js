@@ -3,8 +3,16 @@ import bodyParser from "body-parser"; //enables SEND post requests
 import mongoose from "mongoose"; //used to model posts
 import cors from "cors";//enables CROSS ORIGIN RESOURCE SHARING which allows a browser to load resources to any origin.
 
+
+import postRoutes from "./routes/posts.js";
+
+
 //Initialize the express application
 const app = express ();
+
+//Express Middleware
+app.use("/posts", postRoutes);
+
 
 //General set up for bodyParser so we can properly sent requests:
 app.use(bodyParser.json({ limit: "30mb" , extended: true}));
@@ -18,7 +26,5 @@ const PORT = process.env.PORT || 3001;
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => app.listen(PORT, () => console.log(`server running on port: ${PORT}`)))
     .catch((error) => console.log(error.message));
-
-// mongoose.set("useFindAndModify" , false); OLD AND OBSOLUTE CODE
 
 //we will be using mongodb cloud atlas to host our database.
