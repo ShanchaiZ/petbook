@@ -1,7 +1,7 @@
-import express from "express"; //framework for routing of application
-import bodyParser from "body-parser"; //enables SEND post requests
-import mongoose from "mongoose"; //used to model posts
-import cors from "cors"; //enables CROSS ORIGIN RESOURCE SHARING which allows a browser to load resources to any origin.
+import express from "express";
+import bodyParser from "body-parser";
+import mongoose from "mongoose";
+import cors from "cors";
 
 import postRoutes from "./routes/posts.js";
 import userRouter from "./routes/user.js";
