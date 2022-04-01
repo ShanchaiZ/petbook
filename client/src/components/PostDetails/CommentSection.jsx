@@ -42,7 +42,7 @@ const CommentSection = ({post}) => {
                 fullWidth
                 rows={4}
                 variant ="outlined"
-                label ="Type Here........."
+                label ="type here........."
                 multiline
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
