@@ -1,13 +1,27 @@
 import express from "express";
-import { getPosts, createPost } from "../controllers/posts.js";
 
-const router =  express.Router();
+import {
+  getPosts,
+  getPostsBySearch,
+  getPost,
+  createPost,
+  updatePost,
+  likePost,
+  commentPost,
+  deletePost,
+} from "../controllers/posts.js";
 
+const router = express.Router();
+import auth from "../middleware/auth.js";
 
-//All available routes will be shown below and will be accessed by the browers at http://localhost:3001/posts
-
+router.get("/search", getPostsBySearch);
 router.get("/", getPosts);
-router.post("/", createPost);
+router.get("/:id", getPost);
+
+router.post("/", auth, createPost);
+router.patch("/:id", auth, updatePost);
+router.delete("/:id", auth, deletePost);
+router.patch("/:id/likePost", auth, likePost);
+router.post("/:id/commentPost", auth, commentPost);
 
 export default router;
-
