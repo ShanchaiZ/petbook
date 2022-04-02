@@ -15,6 +15,10 @@ app.use(cors());
 app.use("/posts", postRoutes);
 app.use("/user", userRouter);
 
+app.get("/", (req, res) => {
+  res.send("Hello to Petbook!");
+});
+
 const CONNECTION_URL =
   "mongodb+srv://sz:123sz123@cluster0.aexxo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const PORT = process.env.PORT || 5000;
