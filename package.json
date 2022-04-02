@@ -1,0 +1,28 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo\"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "start": "node server/index.js",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nico-patano/test-heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nico-patano/test-heroku/issues"
+  },
+  "homepage": "https://github.com/nico-patano/test-heroku#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
