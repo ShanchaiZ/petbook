@@ -7,13 +7,33 @@
 This app allows pet lovers to post interesting pictures of their pet along with fun facts and their description or breed type. The project is built using the MERN stack using React, Node.js, Express & MongoDB.
 
 ## Table of Contents
-
+- [UserStory](#UserStory)
+- [AcceptanceCriteria](#AcceptanceCriteria)
 - [Installation](#installation)
-- [Usage](#usage)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+
+
+# UserStory:
+
+As a Pet Owner:
+I want a pet social media app that displays my pet’s special moments
+So that I can view, search, interact(like) and delete pet posts to be shared with other pet owners.
+
+# AcceptanceCriteria:
+
+Given a MERN Stack App
+When I navigate to the main page,
+Then I can login or create new user.
+When I log in,
+Then I can post new image and caption.
+When I view post,
+Then I can like, comment or delete the post.
+When I land on page and log in
+Then I can view, like, comment other posts.
+
 
 ## Installation
 
@@ -33,21 +53,20 @@ For the app to function please install the following CLIENT side dependencies:
 
 For the app to function, please install the following SERVER side dependencies:
 
-- cors
+- CORS
 - express
 - nodemon
 
-## Usage
-
-You can do all the CRUD operations using this app.
-
 ## License
 
-This project is license under Apache
+This project is licensed under Apache
 
 ## Contributing
 
-You can contact me through email.
+You can contact us through email.
+
+# Deployment
+https://stark-ravine-38933.herokuapp.com/posts
 
 ## Questions
 
