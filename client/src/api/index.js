@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "https://pumpkin-pudding-46508.herokuapp.com/posts" });
+const API = axios.create({
+  baseURL: "https://shielded-reaches-61237.herokuapp.com/",
+});
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {

@@ -21,6 +21,7 @@ const CommentSection = ({post}) => {
 
         setComments(newComments);
         setComment('');
+        window.location.replace(`/posts/${post._id}`);
     };
 
     return (
