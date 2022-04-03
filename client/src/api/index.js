@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://shielded-reaches-61237.herokuapp.com/",
+  baseURL: "https://stark-ravine-38933.herokuapp.com/",
 });
 
 API.interceptors.request.use((req) => {
