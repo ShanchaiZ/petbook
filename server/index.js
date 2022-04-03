@@ -15,8 +15,8 @@ app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.use("/posts", postRoutes);
-app.use("/user", userRouter);
+app.use("/api/posts", postRoutes);
+app.use("/api/user", userRouter);
 
 const CONNECTION_URL =
   "mongodb+srv://sz:123sz123@cluster0.aexxo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
