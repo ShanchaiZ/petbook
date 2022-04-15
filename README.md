@@ -70,4 +70,4 @@ https://stark-ravine-38933.herokuapp.com/posts
 
 ## Questions
 
-If you have any questions about this projects,you can contact contributors directly at shanchai.zahid@gmail.com, dyaregal3@gmail.com, and nichoilaspatano@gmail.com. You can view more of contributors projects at https://github.com/ShanchaiZ, https://github.com/yaregaldt, and https://github.com/nico-patano accordingly.
+If you have any questions about this projects,you can contact contributors directly at shanchai.zahid@gmail.com, and nichoilaspatano@gmail.com. You can view more of contributors projects at https://github.com/ShanchaiZ, and https://github.com/nico-patano accordingly.
